@@ -25,7 +25,14 @@ function showChapter(chapterIdx){
     return chapter.chapter === chapterIdx})
   txtEl.innerText = chapter.story
   clearBtns()
-    
+  chapter.options.forEach(function(option){
+      const btn = document.createElement('button')
+      btn.innerText = option.option
+      btn.classList.add('option')
+      btn.addEventListener('click', selectChapter())
+      optionBtns.appendChild(btn)
+
+    })
 }
 function clearBtns(){
   while (optionBtns.firstChild)
