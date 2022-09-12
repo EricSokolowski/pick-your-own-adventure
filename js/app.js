@@ -16,12 +16,17 @@ const optionBtns = document.querySelector('#options')
 
 /*-------------------------------- Functions --------------------------------*/
 
-function init(
-)
-function selectChapter(
+function init(){
+selectChapter(1)
+}
 
-)
-function showChapter(
-  
-)
+function selectChapter(chapterIdx){
+  const chapter = chapters.find(function(chapter){
+    return chapter.chapter === chapterIdx})
+  txtEl.innerText = chapter.story
+}
+
+function showChapter(){
+
+}
 init()
