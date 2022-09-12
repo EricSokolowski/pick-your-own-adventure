@@ -17,6 +17,7 @@ const optionBtns = document.querySelector('#options')
 /*-------------------------------- Functions --------------------------------*/
 
 function init(){
+  state = {}
 showChapter(1)
 }
 
