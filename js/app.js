@@ -24,8 +24,13 @@ function showChapter(chapterIdx){
   const chapter = chapters.find(function(chapter){
     return chapter.chapter === chapterIdx})
   txtEl.innerText = chapter.story
+  clearBtns()
+    
 }
-
+function clearBtns(){
+  while (optionBtns.firstChild)
+  optionBtns.removeChild(optionBtns.firstChild)
+}
 function selectChapter(){
 
 }
