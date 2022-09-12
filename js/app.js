@@ -31,7 +31,7 @@ function showChapter(chapterIdx){
       const btn = document.createElement('button')
       btn.innerText = option.option
       btn.classList.add('option')
-      btn.addEventListener('click', selectChapter())
+      btn.addEventListener('click', function(){selectChapter(option)})
       optionBtns.appendChild(btn)
     }
   })
@@ -43,7 +43,13 @@ function clearBtns(){
   while (optionBtns.firstChild)
   optionBtns.removeChild(optionBtns.firstChild)
 }
-function selectChapter(){
-
+function selectChapter(option){
+  const nextChapterId = option.nextChapter
+  if (nextChapterId === 1) {
+    return init();
+  }
+  state = Object.assign(state, option.setState)
+  showChapter(nextChapterId)
 }
+
 init()

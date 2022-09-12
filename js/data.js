@@ -16,8 +16,12 @@ const chapters = [
   {
     chapter: 2,
     story: `Back already?  A shame really, I thought you’d be the one to rid us of the beast.`,
-    options: 'reset',
-    nextChapter: 1,
+    options: [
+      {
+        option: 'return to the inn',
+        nextChapter: 1
+      }
+    ]
 
   }
 ]
