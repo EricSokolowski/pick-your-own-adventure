@@ -7,8 +7,8 @@ import { chapters } from "./data.js";
 
 
 /*------------------------ Cached Element References ------------------------*/
-
-
+const txtEl = document.querySelector('#text')
+const optionBtns = document.querySelector('#options')
 
 /*----------------------------- Event Listeners -----------------------------*/
 
@@ -16,3 +16,12 @@ import { chapters } from "./data.js";
 
 /*-------------------------------- Functions --------------------------------*/
 
+function init(
+)
+function selectChapter(
+
+)
+function showChapter(
+  
+)
+init()
