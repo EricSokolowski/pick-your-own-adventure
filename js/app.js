@@ -26,6 +26,7 @@ function showChapter(chapterIdx){
     return chapter.chapter === chapterIdx})
   txtEl.innerText = chapter.story
   clearBtns()
+  clearPics()
   chapter.images.forEach(function(image){
     const pic = document.createElement('img')
     pic.src = image
@@ -47,6 +48,10 @@ function showOption(option) {
 function clearBtns(){
   while (optionBtns.firstChild)
   optionBtns.removeChild(optionBtns.firstChild)
+}
+function clearPics(){
+  while(imgSec.firstChild)
+  imgSec.removeChild(imgSec.firstChild)
 }
 function selectChapter(option){
   const nextChapterId = option.nextChapter
