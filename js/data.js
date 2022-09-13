@@ -5,13 +5,16 @@ const chapters = [
     options: [
       {
         option: `Venture out`,
-        nextChapter: 100
+        nextChapter: 100,
       },
       {
         option: `Too Dangerous`,
         nextChapter: 2,
       }
-    ]
+    ],
+    images: [
+      '../assets/download-2.png',
+  ]
   },
   {
     chapter: 2,

@@ -9,7 +9,7 @@ let state = {}
 /*------------------------ Cached Element References ------------------------*/
 const txtEl = document.querySelector('#text')
 const optionBtns = document.querySelector('#options')
-
+const imgSec = document.querySelector('#img-section')
 /*----------------------------- Event Listeners -----------------------------*/
 
 
@@ -26,6 +26,11 @@ function showChapter(chapterIdx){
     return chapter.chapter === chapterIdx})
   txtEl.innerText = chapter.story
   clearBtns()
+  chapter.images.forEach(function(image){
+    const pic = document.createElement('img')
+    pic.src = image
+    imgSec.appendChild(pic)
+  })
   chapter.options.forEach(function(option){
     if (showOption(option)){
       const btn = document.createElement('button')
