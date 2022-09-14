@@ -17,8 +17,8 @@ optionBtns.addEventListener('click', function(evt){
   musicPlays.play()
 })
 musicPlays.addEventListener('ended', function(evt){
-  musicPlays.volume = .10
-  musicPlays.play()
+    musicPlays.play()
+    musicPlays.loop() = true
 })
 
 /*-------------------------------- Functions --------------------------------*/
@@ -68,5 +68,4 @@ function selectChapter(option){
   state = Object.assign(state, option.setState)
   showChapter(nextChapterId)
 }
-
 init()
