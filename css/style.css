@@ -1,0 +1,17 @@
+#content{
+  margin: 200px;
+  display: flexbox;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: grey;
+  border-radius: 20px;
+  padding: 15px;
+  font-family: 'Press Start 2P',cursive;
+  font-size: smaller;
+}
+#options{
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+}
