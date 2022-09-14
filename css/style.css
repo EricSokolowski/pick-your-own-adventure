@@ -1,5 +1,9 @@
+body {
+  background-color: rgb(32, 37, 37);
+}
+
 #content{
-  margin: 200px;
+  margin: 150px;
   display: flexbox;
   align-items: center;
   justify-content: center;
@@ -15,6 +19,18 @@
   display: flex;
   justify-content: space-evenly;
 }
+.option{
+  border-radius: 8px;
+  height: 35px;
+  background-color: white;
+  border: 3px solid black;
+  font-family: 'Press Start 2P', cursive;
+  font-size: smaller;
+}
+.option:hover{
+  background-color: lightgray;
+}
 #text {
   line-height: 2;
 }
+

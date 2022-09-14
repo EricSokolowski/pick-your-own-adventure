@@ -10,8 +10,12 @@ let state = {}
 const txtEl = document.querySelector('#text')
 const optionBtns = document.querySelector('#options')
 const imgSec = document.querySelector('#img-section')
+const musicPlays = new Audio('../assets/forest.mp3')
 /*----------------------------- Event Listeners -----------------------------*/
-
+optionBtns.addEventListener('click', function(evt){
+  musicPlays.volume = .10
+  musicPlays.play()
+})
 
 
 /*-------------------------------- Functions --------------------------------*/
