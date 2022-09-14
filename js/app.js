@@ -16,7 +16,10 @@ optionBtns.addEventListener('click', function(evt){
   musicPlays.volume = .10
   musicPlays.play()
 })
-
+musicPlays.addEventListener('ended', function(evt){
+  musicPlays.volume = .10
+  musicPlays.play()
+})
 
 /*-------------------------------- Functions --------------------------------*/
 
