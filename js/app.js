@@ -30,7 +30,7 @@ imgSec.addEventListener('click', function(evt){
 
 function init(){
   state = {}
-showChapter(1)
+  showChapter(1)
 }
 
 function showChapter(chapterIdx){
@@ -63,7 +63,7 @@ function clearBtns(){
 }
 function clearPics(){
   while(imgSec.firstChild)
-  imgSec.removeChild(imgSec.firstChild)
+    imgSec.removeChild(imgSec.firstChild)
 }
 function selectChapter(option){
   const nextChapterId = option.nextChapter
