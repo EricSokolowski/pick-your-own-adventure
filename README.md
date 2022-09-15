@@ -19,4 +19,4 @@ Check Out the Wireframe [Here!](https://handsome-acorn-a8a.notion.site/Pick-Your
 
 <h4> Next Steps: </h4>
 
-In the future I wan't to add a lot more to the story of the game and really flesh out the world, I also want to incorperate more intricate background images
+In the future I want to add a lot more to the story of the game and really flesh out the world, I also want to incorperate more intricate background images
