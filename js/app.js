@@ -12,13 +12,18 @@ const optionBtns = document.querySelector('#options')
 const imgSec = document.querySelector('#img-section')
 const musicPlays = new Audio('../assets/forest.mp3')
 /*----------------------------- Event Listeners -----------------------------*/
-optionBtns.addEventListener('click', function(evt){
-  musicPlays.volume = .10
-  musicPlays.play()
-})
 musicPlays.addEventListener('ended', function(evt){
+  musicPlays.play()
+  musicPlays.loop() = true
+})
+
+imgSec.addEventListener('click', function(evt){
+  musicPlays.volume = .10
+  if(musicPlays.paused){
     musicPlays.play()
-    musicPlays.loop() = true
+} else {
+    musicPlays.pause()
+  }
 })
 
 /*-------------------------------- Functions --------------------------------*/
@@ -69,4 +74,5 @@ function selectChapter(option){
   state = Object.assign(state, option.setState)
   showChapter(nextChapterId)
 }
+
 init()
