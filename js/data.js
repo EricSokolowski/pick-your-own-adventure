@@ -14,6 +14,7 @@ const chapters = [
     ],
     images: [
       '../assets/download-2.png',
+      '../assets/download-1.png',
   ]
   },
   {

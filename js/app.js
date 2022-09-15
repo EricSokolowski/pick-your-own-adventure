@@ -37,6 +37,7 @@ function showChapter(chapterIdx){
   chapter.images.forEach(function(image){
     const pic = document.createElement('img')
     pic.src = image
+    pic.classList.add('image')
     imgSec.appendChild(pic)
   })
   chapter.options.forEach(function(option){

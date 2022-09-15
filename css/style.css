@@ -37,3 +37,8 @@ body {
   line-height: 2;
   
 }
+#img-section {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 100px;
+}
