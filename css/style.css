@@ -1,10 +1,12 @@
 body {
   background-color: rgb(32, 37, 37);
-  background-image: '#image-section:nth-child(1)'
+  background-image: '#image-section:nth-child(1)';
+  min-height: 100vh;
+  
 }
 
 #content{
-  margin: 150px;
+  margin: 150px 150px 50px 150px;
   display: flexbox;
   align-items: center;
   justify-content: center;
@@ -41,5 +43,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  margin-top: 0;
   margin-bottom: 100px;
+}
+img {
+  width: 300px;
 }

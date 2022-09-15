@@ -16,8 +16,7 @@ const chapters = [
       }
     ],
     images: [
-      '../assets/download-2.png',
-      '../assets/download-1.png',
+      '../assets/download-4.png',
   ]
   },
   {
@@ -59,7 +58,7 @@ const chapters = [
   {
     chapter: `Delve in the Hole`,
     story: `A quick dive into a hollow tree never hurt anyone right?  If anything goes wrong you do have your ax at least.  That’s what you tell yourself to retrieve the courge out from the bottom of your stomach.  You know deep down that felling a tree and a beast are two mightily different tasks.  Climbing down a tree seems no more difficult than climbing up one but you quickly lose the light.  As the sunlight gives up on you this trip is seeming more and more ludacris but there's no point going back up now.  You find the bottom with more ease than you were hoping for but less than you were anticipating.  Strangely, The floor feels not of wood but of stone and you can see, from what is appearing to be a corner of a tunnel you are now in, a glimmer of blue ethereal light.  You feel your way around and to your confusion it is a tunnel.  There's fine wooden supports engraved with some sort of design you could see only if you were a blind.  You make your way to the end of this hall and peak around the corner.  The light fades to a meer glow off of a bow, arrows, and a set of armor.  The bow is light and fluid, vestiges of stags and wild beasts cover it from one end to another.  The arrows are thin and bendy but impossible to break.  The armor looks fluid and breathable but there’s not a scratch on it.  The equipment is spotless but this hideaway looks abandoned.  Nothing in here but dead air and the occasional bug.`,
-    
+
   }
 ]
 
