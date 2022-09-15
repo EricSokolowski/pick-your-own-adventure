@@ -11,20 +11,21 @@ const txtEl = document.querySelector('#text')
 const optionBtns = document.querySelector('#options')
 const imgSec = document.querySelector('#img-section')
 const musicPlays = new Audio('../assets/forest.mp3')
+// const pictures = document.querySelector('.pics')
 /*----------------------------- Event Listeners -----------------------------*/
 musicPlays.addEventListener('ended', function(evt){
   musicPlays.play()
   musicPlays.loop() = true
 })
 
-imgSec.addEventListener('click', function(evt){
-  musicPlays.volume = .10
-  if(musicPlays.paused){
-    musicPlays.play()
-} else {
-    musicPlays.pause()
-  }
-})
+// pictures.addEventListener('click', function(evt){
+//   musicPlays.volume = .10
+//   if(musicPlays.paused){
+//     musicPlays.play()
+// } else {
+//     musicPlays.pause()
+//   }
+// })
 
 /*-------------------------------- Functions --------------------------------*/
 
@@ -42,6 +43,15 @@ function showChapter(chapterIdx){
   chapter.images.forEach(function(image){
     const pic = document.createElement('img')
     pic.src = image
+    pic.classList.add('pics')
+    pic.addEventListener('click', function(evt){
+      musicPlays.volume = .10
+      if(musicPlays.paused){
+        musicPlays.play()
+    } else {
+        musicPlays.pause()
+      }
+    })
     imgSec.appendChild(pic)
   })
   chapter.options.forEach(function(option){
@@ -54,6 +64,7 @@ function showChapter(chapterIdx){
     }
   })
 }
+
 function showOption(option) {
   return option.requiredState == null || option.requiredState(state)
 }

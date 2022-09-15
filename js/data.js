@@ -16,7 +16,7 @@ const chapters = [
       }
     ],
     images: [
-      '../assets/download-4.png',
+      '../assets/music-man.png',
   ]
   },
   {
