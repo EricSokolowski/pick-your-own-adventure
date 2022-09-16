@@ -21,7 +21,11 @@ Check out the wireframe [here!](https://handsome-acorn-a8a.notion.site/Pick-Your
 - CSS
 - make8bitart
 <h2> Next Steps: </h2>
-In the future, I want to add more to the story to flesh out the world. I also want to incorporate more intricate background images.
+
+- more story
+- add backgorund images
+- animation to beginning, win, lose
+- mobile version 
 <h2> Sources </h2>
 
 - images from [make8bitart](https://make8bitart.com/)
