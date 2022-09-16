@@ -11,27 +11,18 @@ const txtEl = document.querySelector('#text')
 const optionBtns = document.querySelector('#options')
 const imgSec = document.querySelector('#img-section')
 const musicPlays = new Audio('../assets/forest.mp3')
-// const pictures = document.querySelector('.pics')
 /*----------------------------- Event Listeners -----------------------------*/
 musicPlays.addEventListener('ended', function(evt){
   musicPlays.play()
   musicPlays.loop() = true
 })
 
-// pictures.addEventListener('click', function(evt){
-//   musicPlays.volume = .10
-//   if(musicPlays.paused){
-//     musicPlays.play()
-// } else {
-//     musicPlays.pause()
-//   }
-// })
-
-/*-------------------------------- Functions --------------------------------*/
+/*------------------------------- Functions --------------------------------*/
 
 function init(){
   state = {}
   showChapter(1)
+  txtEl.classList.add('beginning')
 }
 
 function showChapter(chapterIdx){
@@ -80,6 +71,12 @@ function selectChapter(option){
   const nextChapterId = option.nextChapter
   if (nextChapterId === 1) {
     return init();
+  } else if (nextChapterId === 100) {
+    txtEl.classList.remove('beginning')
+    txtEl.classList.add('ending')
+  } else if (nextChapterId !== 1 || 100){
+    txtEl.classList.remove('beginning')
+    txtEl.classList.remove('ending')
   }
   state = Object.assign(state, option.setState)
   showChapter(nextChapterId)
