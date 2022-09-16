@@ -24,7 +24,6 @@ body {
   align-items: center;
   display: flex;
   justify-content: space-evenly;
-  bottom: 0;
 }
 .option{
   border-radius: 8px;
@@ -50,14 +49,24 @@ body {
 }
 img {
   width: 300px;
+  height: 300px;
 }
 .beginning{
+  font-size: 20px;
   color: blue;
+  padding-top: 40px;
+  padding-bottom: 120px;
 }
 
 .lost{
+  font-size: 20px;
+  padding-top: 40px;
+  padding-bottom: 120px;
   color: orange;
 }
 .won{
-  color: green;
+  color: greenyellow;
+  padding-top: 40px;
+  padding-bottom: 120px;
+  font-size: 20px;
 }
