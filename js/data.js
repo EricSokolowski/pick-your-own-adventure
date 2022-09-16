@@ -24,7 +24,7 @@ const chapters = [
       },
     ],
     images : [
-      `../assets/music-man.png`,
+      `../assets/hero-ax.png`,
     ],
   },
 
@@ -42,7 +42,9 @@ const chapters = [
       },
     ],
     images : [
-
+      `../assets/hero-ax.png`,
+      `../assets/tree.png`,
+      `../assets/cave.png`
     ],
   },
 
@@ -60,7 +62,9 @@ const chapters = [
       }
     ],
     images: [
-
+      `../assets/cut-tree.png`,
+      `../assets/hero-ax.png`,
+      `../assets/cave.png`,
     ],
   },
   {
@@ -77,7 +81,8 @@ const chapters = [
       },
     ],
     images: [
-
+      `../assets/hero-idle.png`,
+      `../assets/bow.png`
     ],
   },
   {
@@ -94,7 +99,9 @@ const chapters = [
       },
     ],
     images: [
-
+      `../assets/cut-tree.png`,
+      `../assets/hero-bow.png`,
+      `../assets/croc.png`
     ],
   },
   {
@@ -107,7 +114,8 @@ const chapters = [
       },
     ],
     images: [
-
+      `../assets/hero-bow.png`,
+      `../assets/croc.png`
     ],
   }, 
   {
@@ -138,7 +146,8 @@ const chapters = [
       },
     ],
     images: [
-      
+      `../assets/hero-idle.png`,
+      `../assets/maul.png`,
     ],
   },
   {
@@ -155,7 +164,9 @@ const chapters = [
       },
     ],
     images: [
-
+      `../assets/cave.png`,
+      `../assets/hero-maul.png`,
+      `../assets/croc.png`,
     ],
   },
   {
@@ -168,6 +179,7 @@ const chapters = [
       },
     ],
     images: [
+      
     ],
   },
   {
@@ -192,6 +204,9 @@ const chapters = [
       },
     ],
     images: [
+      `../assets/cut-tree.png`,
+      `../assets/hero-idle.png`,
+      `../assets/croc.png`,
     ],
   },
   {
@@ -204,6 +219,9 @@ const chapters = [
       },
     ],
     images: [
+      `../assets/cave.png`,
+      `../assets/hero-ax.png`,
+      `../assets/croc.png`,
     ],
   },
   {
