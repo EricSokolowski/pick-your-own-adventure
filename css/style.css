@@ -18,11 +18,13 @@ body {
   font-size: smaller;
   animation: zoomIn;
   animation-duration: 1s;
+  min-height: 400px;
 }
 #options{
   align-items: center;
   display: flex;
   justify-content: space-evenly;
+  bottom: 0;
 }
 .option{
   border-radius: 8px;
@@ -53,6 +55,9 @@ img {
   color: blue;
 }
 
-.ending{
+.lost{
   color: orange;
+}
+.won{
+  color: green;
 }

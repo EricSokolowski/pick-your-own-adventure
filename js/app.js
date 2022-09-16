@@ -22,6 +22,8 @@ musicPlays.addEventListener('ended', function(evt){
 function init(){
   state = {}
   showChapter(1)
+  txtEl.classList.remove('won')
+  txtEl.classList.remove('lost')
   txtEl.classList.add('beginning')
 }
 
@@ -70,13 +72,19 @@ function clearPics(){
 function selectChapter(option){
   const nextChapterId = option.nextChapter
   if (nextChapterId === 1) {
-    return init();
+    init()
   } else if (nextChapterId === 100) {
     txtEl.classList.remove('beginning')
-    txtEl.classList.add('ending')
-  } else if (nextChapterId !== 1 || 100){
+    txtEl.classList.remove('won')
+    txtEl.classList.add('lost')
+  } else if (nextChapterId === 99){
     txtEl.classList.remove('beginning')
-    txtEl.classList.remove('ending')
+    txtEl.classList.remove('lost')
+    txtEl.classList.add('won')
+  } else if(nextChapterId !== 1 || 100 || 99){
+    txtEl.classList.remove('beginning')
+    txtEl.classList.remove('lost')
+    txtEl.classList.remove('won')
   }
   state = Object.assign(state, option.setState)
   showChapter(nextChapterId)
