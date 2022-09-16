@@ -138,7 +138,7 @@ const chapters = [
       },
     ],
     images: [
-
+      
     ],
   },
   {
